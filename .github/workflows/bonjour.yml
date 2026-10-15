@@ -1,23 +1,23 @@
-name: Mon premier pipeline
+name:  Mon premier pipeline
 on:
   push:
   workflow_dispatch:
 jobs:
   bonjour:
-     runs-on: ubuntu-latest
+     runs-on:  ubuntu-latest
      steps:
-       - name: Dire bonjour
-         run: echo "Bonjour ISEP Diamniadio !"
-       - name: Présenter la machine
+       - name:  Dire bonjour
+         run:  echo "Bonjour ISEP Diamniadio !"
+       - name:  Présenter la machine
          run: |
            whoami
            uname-a
            date
-       - name: Lister les fichiers avant
-         run: ls -la
-       - name: Lire un fichier
-         run: cat README.md
-       - name: Récupérer le code
-         uses: actions/checkout@v7
-       - name: Lister les fichiers après
-         run: ls -la
+       - name:  Lister les fichiers avant
+         run:  ls -la
+       - name:  Lire un fichier
+         run:  cat README.md
+       - name:  Récupérer le code
+         uses:  actions/checkout@v7
+       - name:  Lister les fichiers après
+         run:  ls -la
