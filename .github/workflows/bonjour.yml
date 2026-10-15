@@ -17,7 +17,7 @@ jobs:
          run: ls -la
        - name: Récupérer le code 
        - name: Lire un fichier
-         run: cat fichier-inexistant.txt
+         run: cat README.md
          uses: actions/checkout@v7
        - name: Lister les fichiers après
          run: ls -la
