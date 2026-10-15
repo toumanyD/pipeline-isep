@@ -15,9 +15,9 @@ jobs:
            date
        - name:  Lister les fichiers avant
          run:  ls -la
+       - name:  recuperer le code
+         uses:  actions/checkout@v7
        - name:  Lire un fichier
          run:  cat README.md
-       - name:  Récupérer le code
-         uses:  actions/checkout@v7
        - name:  Lister les fichiers après
          run:  ls -la
